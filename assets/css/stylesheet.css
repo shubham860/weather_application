@@ -1,17 +1,31 @@
 body{
-     font-family: 'Cinzel', serif;
+     font-family: 'K2D', sans-serif;
      overflow-y: hidden;
      overflow-x: hidden;
      margin-top: 50px;
     }
 
+#city
+{
+  font-size: 40px;
+}
+
+#temp{
+  font-size: 90px;
+}
+
+.details{
+  margin-left: 25px;
+  margin-top: 30px;
+}
 
 @media (min-width: 1025px){
   .background{
-      background-image: url('..\\images\\F.png');
+      background-image: url('..\\images\\F.jpg');
       height: 250px;
       width: 500px;
       margin-left: 300px;
+      color:white;
   }
   #stats{
     background-color: black;
@@ -27,6 +41,7 @@ body{
       background-image: url('..\\images\\e.jpg');
       height:250px;
       width : 414px;
+      color:white;
     }
     #stats{
       background-color: black;
