@@ -33,7 +33,18 @@ body{
     width: 500px;
     margin-left: 300px;
   }
-
+  #logo{
+    float:right;
+    margin-top:-200px;
+    margin-right:50px;
+  }
+  table{
+    margin-left: 30px;
+    color: white;
+  }
+  td{
+    padding: 8px;
+  }
 }
 
 @media (max-width: 1025px){
@@ -48,5 +59,17 @@ body{
       height: 400px;
       width: 414px;
       margin-top: -10px;
+    }
+    #logo{
+      float:right;
+      margin-top:-200px;
+      margin-right:50px;
+    }
+    table{
+      margin-left:15px;
+      color: white;
+    }
+    td{
+      padding: 8px;
     }
 }
