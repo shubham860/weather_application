@@ -1,0 +1,37 @@
+body{
+     font-family: 'Cinzel', serif;
+     overflow-y: hidden;
+     overflow-x: hidden;
+     margin-top: 50px;
+    }
+
+
+@media (min-width: 1025px){
+  .background{
+      background-image: url('..\\images\\F.png');
+      height: 250px;
+      width: 500px;
+      margin-left: 300px;
+  }
+  #stats{
+    background-color: black;
+    height: 300px;
+    width: 500px;
+    margin-left: 300px;
+  }
+
+}
+
+@media (max-width: 1025px){
+  .background{
+      background-image: url('..\\images\\e.jpg');
+      height:250px;
+      width : 414px;
+    }
+    #stats{
+      background-color: black;
+      height: 400px;
+      width: 414px;
+      margin-top: -10px;
+    }
+}
