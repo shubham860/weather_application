@@ -21,6 +21,8 @@ request.onreadystatechange = function() {
         var city =  data.query.results.channel.location.city;
         var rise =  data.query.results.channel.astronomy.sunrise;
         var set =  data.query.results.channel.astronomy.sunset;
+        var cloud = data.query.results.channel.item.forecast;
+           var clouds = forecast[0].text;
 
           document.getElementById('city').innerHTML=  city;
           document.getElementById('temp').innerHTML=  Math.floor(tempr) + '&deg;'+'C';
@@ -30,15 +32,15 @@ request.onreadystatechange = function() {
           document.getElementById('low').innerHTML=  Math.floor(low) + '&deg;'+'C';
           document.getElementById('rise').innerHTML= "Sunrise  -"+" "+rise;
           document.getElementById('set').innerHTML= "Sunset  -"+" "+set;
-
-
-
+          document.getElementById('cloud').innerHTML= clouds;
     }
   };
   request.open('GET',url,true);
   request.send();
   return false;
 }
+
+
   function my(){
 document.getElementById('text').value="";
 }
