@@ -1,5 +1,7 @@
 # weather_application
 weather app using api
+
+
 {
 "query": {
 "count": 1,
