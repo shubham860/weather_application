@@ -6,9 +6,10 @@ var request = new XMLHttpRequest();
 request.onreadystatechange = function() {
     if (request.readyState == 4 && request.status == 200) {
        var data = JSON.parse(request.responseText);
+       
        var tempr = data.query.results.item.condition.temp;
               tempr=(5*(tempr-32))/9;
-          document.getElementById('temp').innerHTML= tempr;
+          document.getElementById('temp').innerHTML= 'Temperature:' +  Math.floor(tempr) + '&deg;'+'C';
     }
   };
   request.open('GET',url,true);
