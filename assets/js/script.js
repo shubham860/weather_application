@@ -1,6 +1,8 @@
 
 function report() {
-var url ='https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22moradabad%2C%20india%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys';
+
+var location = document.getElementById('text').value;
+var url ='https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid in (select woeid from geo.places(1) where text="' + location + '")&format=json';
 
 var request = new XMLHttpRequest();
 request.onreadystatechange = function() {
@@ -35,4 +37,8 @@ request.onreadystatechange = function() {
   };
   request.open('GET',url,true);
   request.send();
+  return false;
+}
+  function my(){
+document.getElementById('text').value="";
 }
