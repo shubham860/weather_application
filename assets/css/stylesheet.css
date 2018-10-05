@@ -18,7 +18,7 @@ body{
   margin-top: 30px;
 }
 
-@media (min-width: 1025px){
+@media (min-width: 745px){
   .background{
       background-image: url('..\\images\\F.jpg');
       height: 250px;
@@ -45,9 +45,9 @@ body{
     padding: 8px;
   }
   #text{
-    width:300px;
+    width:250px;
     height: 40px;
-    margin-left:60px;
+    margin-left:80px;
     font-size:20px;
   }
   #btn{
@@ -57,7 +57,7 @@ body{
   }
 }
 
-@media (max-width: 1025px){
+@media (max-width: 745px){
   .background{
       background-image: url('..\\images\\e.jpg');
       height:250px;
@@ -83,7 +83,7 @@ body{
       padding: 8px;
     }
     #text{
-      width:250px;
+      width:200px;
       height: 40px;
       margin-left:45px;
       font-size: 20px;
